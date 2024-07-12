@@ -18,17 +18,21 @@ git push -u origin main
 ## Usage
 
 ### shell script
+
 - excute command
+
 ```
 ./git-command.sh
 ```
 
 When an error `permission denied: ./git-command.sh` occurs, excute bellow.
+
 ```
 chmod 755 git-command.sh
 ```
 
 ### python
+
 - excute command
 
 ```
@@ -42,14 +46,18 @@ python3 git-command.py -p
 ```
 
 ## excute without clone
+
 ### shell script
+
 - excute command
+  - create public repository
 
 ```
-curl https://raw.githubusercontent.com/Tsuyopon-1067/git-create-repository-script/main/git-command.sh | sh
+curl -L https://raw.githubusercontent.com/Tsuyopon-1067/git-create-repository-script/main/git-command.sh | bash -s -- --public
 ```
 
 ### python
+
 - excute command
 
 ```
