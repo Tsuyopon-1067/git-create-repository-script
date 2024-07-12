@@ -1,6 +1,8 @@
 #/bin/bash
 repository_name=$(basename "$PWD")
 user_name=$(git config --global user.name)
+
+gh repo create $repository_name
 git init
 echo "# "$repository_name >> README.md
 git add README.md
