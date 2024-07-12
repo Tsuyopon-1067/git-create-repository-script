@@ -17,3 +17,5 @@ function gitnewrepo() {
     git remote add origin git@github.com:$user_name/$repository_name.git
     git push -u origin main
 }
+
+gitnewrepo "$@"
